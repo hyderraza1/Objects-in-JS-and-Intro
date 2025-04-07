@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to objects</title>
+</head>
+<body>
+     <h1>Car 1</h1>
+    <p id="I"></p>
+    <p id="Y"></p>
+    <p id="S"></p>
+    <p id="J"></p>
+    <script>
+        var Car = {
+            Company: "Ferrari",
+            Model: "812 Superfast",
+            Speed: "340km/h"
+        }
+        document.getElementById("I").innerHTML = "The car brand is " + Car.Company + " and the model you are seeing is "
+        + Car.Model + ". The top speed on this car is " + Car.Speed;
+        
+        var value = Math.acos(-1);
+        document.getElementById("Y").innerHTML = "Value is " + value 
+        
+        var value = Math.asin(0);
+        document.getElementById("S").innerHTML = "Value is " + value
+
+        function max(){
+            var max = 0;
+            for (i = 0; i < arguments.length; i++) {
+            if (arguments[i] > max){
+                max = arguments[i]
+            }
+            }
+            return max
+        }
+       document.getElementById("J").innerHTML = max(12, 267, 173, 837)
+    </script>
+
+</body>
+</html>
